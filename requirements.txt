@@ -1,0 +1,9 @@
+torch
+torchvision
+diffusers
+transformers
+pytorch-lightning
+accelerate
+tqdm
+Pillow
+

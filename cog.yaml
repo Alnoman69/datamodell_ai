@@ -1,0 +1,23 @@
+build:
+  python_version: "3.10"
+  system_packages: []
+  python_packages:
+    - torch
+    - torchvision
+    - diffusers
+    - transformers
+    - pytorch-lightning
+    - accelerate
+    - tqdm
+    - Pillow
+
+train:
+  script: train.py
+  args:
+    - name: --epochs
+      type: int
+      default: 3
+    - name: --batch_size
+      type: int
+      default: 1
+

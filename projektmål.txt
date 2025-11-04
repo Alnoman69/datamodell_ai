@@ -1,0 +1,1 @@
+Mål: Träna en AI-modell som tar en skiss (handritad, fotad eller webbild) och genererar en snygg planritning i prospektstil (färger, möbler, rum). Modellen ska köras på Replicate och anropas från frontend via API.
