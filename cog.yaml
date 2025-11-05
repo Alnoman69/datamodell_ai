@@ -14,10 +14,10 @@ build:
 train:
   script: train.py
   args:
-    - name: --epochs
+    epochs:
       type: int
       default: 3
-    - name: --batch_size
+    batch_size:
       type: int
       default: 1
 
