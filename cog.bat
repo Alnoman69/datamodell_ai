@@ -1,2 +1,2 @@
 @echo off
-python -m cog.cli %*
+py -3.11 -c "import sys; from cog.cli import cli; sys.exit(cli())" %*
