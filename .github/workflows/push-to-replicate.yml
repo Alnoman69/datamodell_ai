@@ -1,0 +1,19 @@
+name: Push to Replicate
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: replicate/setup-cog@v1
+
+      - name: Push model to Replicate
+        run: |
+          cog push alnoman69/datamodell_ai
+        env:
+          REPLICATE_API_TOKEN: ${{ secrets.REPLICATE_API_TOKEN }}
